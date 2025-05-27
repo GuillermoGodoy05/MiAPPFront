@@ -3,6 +3,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src", // Indica la base para las rutas absolutas
+    "paths": {
+      "@app/*": ["app/*"], // Alias para 'src/app'
+      "@models/*": ["app/Models/*"], // Alias específico para la carpeta Models
+      "@settings/*": ["app/Settings/*"] // Alias específico para la carpeta Settings
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,
