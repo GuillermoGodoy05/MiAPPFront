@@ -21,7 +21,7 @@ export class EmpleadoService {
   }
 
   obtener(id: number) {
-    return this.http.get<Empleado[]>(`${this.apiUrl}/${id}`);
+    return this.http.get<Empleado>(`${this.apiUrl}/${id}`);
   }
 
   crear(objeto: Empleado) {

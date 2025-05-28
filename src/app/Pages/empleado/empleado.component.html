@@ -1,1 +1,43 @@
-<p>empleado works!</p>
+<div class="mat-elevation-z2"
+    style="width: 30%; padding: 30px; margin: 50px auto; display: flex; justify-content: center; background-color: rgb(184, 184, 184);">
+    <form [formGroup]="formEmpleado" >
+       
+        <div class="flex">
+            <mat-form-field style="width: 15rem;">
+                <mat-label>Nombre Completo</mat-label>
+                <input matInput formControlName="nombreCompleto">
+            </mat-form-field>
+        </div>
+
+        <div class="flex">
+            <mat-form-field style="width: 15rem;">
+                <mat-label>Correo</mat-label>
+                <input matInput formControlName="correo">
+            </mat-form-field>
+        </div>
+
+        <div class="flex">
+            <mat-form-field style="width: 15rem;">
+                <mat-label>Sueldo</mat-label>
+                <input matInput type="number" formControlName="sueldo">
+            </mat-form-field>
+        </div>
+
+        <div class="flex">
+            <mat-form-field style="width: 15rem;">
+                <mat-label>Fecha Contrato</mat-label>
+                <input matInput formControlName="fechaContrato">
+            </mat-form-field>
+        </div>
+
+        <div class="flex">
+            <button mat-flat-button (click)="guardar()" style="background-color: rgb(153, 140, 153);">
+                Guardar
+            </button>
+            <button mat-flat-button (click)="volver()" style="background-color:  rgb(153, 140, 153); margin-left: 15px;">
+                Volver
+            </button>
+        </div>
+
+    </form>
+</div>
